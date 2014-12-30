@@ -1,0 +1,17 @@
+{
+    "name": "ddliu/template",
+    "description": "Native PHP template engine",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dong",
+            "email": "ddliuhb@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ddliu\\template\\": "src/"
+        }
+    }
+}
