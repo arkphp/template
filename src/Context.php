@@ -1,4 +1,10 @@
 <?php
+/**
+ * template
+ * @copyright 2014 Liu Dong <ddliuhb@gmail.com>
+ * @license MIT
+ */
+
 namespace ddliu\template;
 
 class Context {

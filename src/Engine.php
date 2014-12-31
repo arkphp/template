@@ -1,11 +1,17 @@
 <?php
 namespace ddliu\template;
 
+/**
+ * template
+ * @copyright 2014 Liu Dong <ddliuhb@gmail.com>
+ * @license MIT
+ */
+
 use ddliu\template\Extension\CoreExtension;
 use ddliu\template\Extension\ExtensionInterface;
 
 class Engine {
-    private $helpers = array();
+    private $functions = array();
 
     /**
      * One context for one render
@@ -27,6 +33,11 @@ class Engine {
     public function __construct($options = null){
         if(null === $options){
             $options = array();
+        }
+        if (is_string($options)) {
+            $options = [
+                'root' => $options
+            ];
         }
         $this->options = array_merge($options, array(
             'extract' => true,
@@ -151,6 +162,18 @@ class Engine {
 
     public function registerFunction($name, $func) {
         $this->functions[$name] = $func;
+    }
+
+    public function filter($value, $filters) {
+        $filters = explode('|', $filters);
+        foreach ($filters as $filter) {
+            if (isset($this->functions[$filter])) {
+                $filter = $this->functions[$filter];
+            }
+            $value = call_user_func($filter, $value);
+        }
+
+        return $value;
     }
 
     public function __call($func, $arguments){

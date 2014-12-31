@@ -4,9 +4,7 @@ use ddliu\template\Engine;
 class CommonTest extends PHPUnit_Framework_TestCase {
     protected function getEngine()
     {
-        return new Engine([
-            'root' => dirname(__FILE__).'/templates'
-        ]);
+        return new Engine(__DIR__.'/templates');
     }
 
     public function testSingle()
@@ -36,5 +34,13 @@ class CommonTest extends PHPUnit_Framework_TestCase {
 
         $text = $view->render('assign.html.php', array('name' => 'World'), true);
         $this->assertEquals($text, 'Hello World');
+    }
+
+    public function testFilter() {
+        $engine = $this->getEngine();
+        $text = $engine->render('filter.html.php', [
+            'text' => '<test>'
+        ], true);
+        $this->assertEquals($text, '&lt;TEST&gt;');
     }
 }

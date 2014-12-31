@@ -1,0 +1,1 @@
+<?=$this->e($text, 'strtoupper')?>

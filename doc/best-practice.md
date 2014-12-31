@@ -1,5 +1,0 @@
-## Use Short Tag
-
-```
-<?=$name?>
-```
