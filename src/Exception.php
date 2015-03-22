@@ -1,10 +1,10 @@
 <?php
-namespace ddliu\template;
-
 /**
- * template
- * @copyright 2014 Liu Dong <ddliuhb@gmail.com>
+ * ark.template
+ * @copyright 2015 Liu Dong <ddliuhb@gmail.com>
  * @license MIT
  */
+
+namespace Ark\Template;
 
 class Exception extends \Exception {}

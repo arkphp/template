@@ -1,11 +1,11 @@
 <?php
 /**
- * template
- * @copyright 2014 Liu Dong <ddliuhb@gmail.com>
+ * ark.template
+ * @copyright 2015 Liu Dong <ddliuhb@gmail.com>
  * @license MIT
  */
 
-namespace ddliu\template;
+namespace Ark\Template;
 
 class Context {
     /**

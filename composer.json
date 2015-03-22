@@ -1,5 +1,5 @@
 {
-    "name": "ddliu/template",
+    "name": "ark/template",
     "description": "Native PHP template engine",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "ddliu\\template\\": "src/"
+            "Ark\\Template\\": "src/"
         }
     }
 }

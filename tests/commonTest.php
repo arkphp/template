@@ -1,5 +1,5 @@
 <?php
-use ddliu\template\Engine;
+use Ark\Template\Engine;
 
 class CommonTest extends PHPUnit_Framework_TestCase {
     protected function getEngine()

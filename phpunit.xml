@@ -2,7 +2,7 @@
     bootstrap="vendor/autoload.php"
     >
   <testsuites>
-    <testsuite name="ddliu.template">
+    <testsuite name="ark.template">
       <directory>tests</directory>
     </testsuite>
   </testsuites>

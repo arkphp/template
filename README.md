@@ -1,17 +1,17 @@
-# PHP Template [![Build Status](https://travis-ci.org/ddliu/php-template.svg)](https://travis-ci.org/ddliu/php-template)
+# PHP Template
 
 Native PHP template engine
 
 ## Installation
 
 ```
-composer require ddliu/template
+composer require ark/template
 ```
 
 ## Usage
 
 ```php
-use ddliu\template\Engine;
+use Ark\Template\Engine;
 
 $template = new Engine('/path/to/templates/root');
 

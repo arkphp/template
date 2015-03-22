@@ -1,14 +1,14 @@
 <?php
-namespace ddliu\template;
-
 /**
- * template
- * @copyright 2014 Liu Dong <ddliuhb@gmail.com>
+ * ark.template
+ * @copyright 2015 Liu Dong <ddliuhb@gmail.com>
  * @license MIT
  */
 
-use ddliu\template\Extension\CoreExtension;
-use ddliu\template\Extension\ExtensionInterface;
+namespace Ark\Template;
+
+use Ark\Template\Extension\CoreExtension;
+use Ark\Template\Extension\ExtensionInterface;
 
 class Engine {
     private $functions = array();

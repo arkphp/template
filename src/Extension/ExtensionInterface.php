@@ -1,13 +1,13 @@
 <?php
-namespace ddliu\template\Extension;
-
 /**
- * template
- * @copyright 2014 Liu Dong <ddliuhb@gmail.com>
+ * ark.template
+ * @copyright 2015 Liu Dong <ddliuhb@gmail.com>
  * @license MIT
  */
 
-use ddliu\template\Engine;
+namespace Ark\Template\Extension;
+
+use Ark\Template\Engine;
 
 interface ExtensionInterface {
     public function register(Engine $engine);
