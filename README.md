@@ -1,6 +1,6 @@
 # PHP Template
 
-Native PHP template engine
+Native PHP template engine [![Build Status](https://travis-ci.org/arkphp/template.png)](https://travis-ci.org/arkphp/template)
 
 ## Installation
 
