@@ -113,7 +113,7 @@ class Engine {
     }
 
     public function getVar($key, $default = null){
-        return $this->getCurrentContext()->getVar($key, isset($this->variables[$key])?$this->variables:$default);
+        return $this->getCurrentContext()->getVar($key, isset($this->variables[$key])?$this->variables[$key]:$default);
     }
 
     public function hasVar($key){
