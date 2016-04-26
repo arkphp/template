@@ -34,6 +34,9 @@ class CommonTest extends PHPUnit_Framework_TestCase {
 
         $text = $view->render('assign.html.php', array('name' => 'World'), true);
         $this->assertEquals($text, 'Hello World');
+
+        $text = $view->render('index.html.php', null, true);
+        $this->assertRegExp('/#layout_header\s*#index_content\s*#layout_footer\s*global/', $text);
     }
 
     public function testFilter() {

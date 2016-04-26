@@ -242,6 +242,9 @@ class Engine {
 
                 if($this->options['extract']){
                     extract($currentContext->getVariables(), EXTR_SKIP);
+                    if ($this->variables) {
+                        extract($this->variables, EXTR_SKIP);
+                    }
                 }
 
                 // render the parent view file

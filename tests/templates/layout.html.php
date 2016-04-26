@@ -6,4 +6,5 @@
 <?php $this->end();?>
 <?php $this->begin('footer');?>
 #layout_footer
+<?=$name?>
 <?php $this->end();?>

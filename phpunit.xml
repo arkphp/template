@@ -1,5 +1,6 @@
 <phpunit
     bootstrap="vendor/autoload.php"
+    convertNoticesToExceptions="false"
     >
   <testsuites>
     <testsuite name="ark.template">
